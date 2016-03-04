@@ -9,6 +9,7 @@ buildscript {
 
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.3.RELEASE")
+        classpath 'org.springframework:springloaded:1.2.1.RELEASE'
     }
 }
 
@@ -37,4 +38,16 @@ task wrapper(type: Wrapper) {
 jar {
     baseName = 'gs-serving-web-content'
     version =  '0.1.0'
+}
+
+bootRun {
+    addResources = true // 静态文件自动更新
+}
+
+idea {
+    module {
+        // 设置输出文件目录,开发环境中更新后可以动态生成class文件,不用重启
+        inheritOutputDirs = false
+        outputDir = file("$buildDir/classes/main/")
+    }
 }
