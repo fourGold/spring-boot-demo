@@ -1,4 +1,4 @@
-package com.wallstreetcn.models;
+package com.wallstreetcn.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,6 +1,6 @@
 package com.wallstreetcn.controllers;
 
-import com.wallstreetcn.models.User;
+import com.wallstreetcn.entities.User;
 import com.wallstreetcn.models.UserDao;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;

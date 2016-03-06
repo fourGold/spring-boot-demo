@@ -2,6 +2,7 @@ package com.wallstreetcn.models;
 
 import javax.transaction.Transactional;
 
+import com.wallstreetcn.entities.User;
 import org.springframework.data.repository.CrudRepository;
 
 /**
