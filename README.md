@@ -11,21 +11,21 @@ IDE
 
 2. 构建项目
 
-       gradle wrapper
-       ./gradlew idea
-       ./gradlew build
+        gradle wrapper
+        ./gradlew idea
+        ./gradlew build
 
 3. 运行项目
 
    开发模式
 
-       ./gradlew bootRun
+        ./gradlew bootRun
    支持热替换,即时修改即时更新
 
    服务器模式
 
-       ./gradlew build
-       java -jar build/libs/{your-jar-name}.jar
+        ./gradlew build
+        java -jar build/libs/{your-jar-name}.jar
    不支持热替换
 
 
